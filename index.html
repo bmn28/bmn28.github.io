@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>Bryan Nguyen</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+
+<div style="text-align: center;">
+
+<h1>Bryan Nguyen</h1>
+
+<p>GitHub: <a href="https://github.com/bmn28">https://github.com/bmn28</a></p>
+
+</div>
+
+<h2>XianDict</h2>
+
+<p>XianDict is a Chinese dictionary application I wrote in C# using WPF. It imports data from two dictionaries: <a href="https://cc-cedict.org/">CC-CEDICT</a>, a CC-BY-SA-3.0 licensed Chinese-English dictionary, and <a href="http://dict.revised.moe.edu.tw/">重編國語辭典修訂本</a>, a CC-BY-ND-3.0 licensed Chinese-Chinese dictionary created by the Ministry of Education of the Republic of China and <a href="https://github.com/g0v/moedict-data">converted into JSON format</a> by <a href="http://g0v.tw">g0v</a> for the <a href="http://www.moedict.org">萌典</a> project.</p>
+
+<img src="xiandict.png" style="display:block; margin: auto;"/>
+
+<p>XianDict allows flexible word lookup using characters (traditional or simplified) or combinations of pinyin, tones, and wildcards. For example, the query <code>ma3*ya</code> (the syllable mǎ, then zero or more characters, then any syllable starting in "ya") will match 馬雅, 瑪麗亞, and 馬來西亞. Characters can also be looked up by radical.</p>
+
+<p>Dictionary entries are displayed as WPF FlowDocuments. If a word within the entry is selected, this word is also looked up and displayed as a popup window. There is also a clipboard viewer, which displays the current contents of the Windows clipboard and also allows selecting words to look them up in a popup window. This is useful for looking up unknown words while reading texts.</p>
+
+<p>XianDict displays character stroke orders with animations implemented in WPF.</p>
+
+<p>XianDict requires the .NET Framework 4.5.2. Download <a href="https://bmn.kittenpile.com/XianDict.zip">XianDict.zip</a>, extract to a folder, and run XianDict.exe. On first run, the program will take a short while to prepare the database. The source code is available on <a href="https://github.com/bmn28/XianDict">GitHub</a>.</p>
+
+<h2>skcrwblr</h2>
+
+<p>skcrwblr is a WinForms application for streaming the <a href="http://www.kcrw.com/">KCRW</a> radio station, both its main broadcast and its 24/7 music station. Using a JSON tracklist periodically pulled from the station's website, it displays the currently playing song (as well as the artist and album) and the previously played songs. Using the Last.fm API, it displays album art and corrects spelling errors that may occur in the tracklist. The user can also log in with a Last.fm account in order to log ("scrobble") songs that are played and mark them as "loved".</p>
+
+<img src="skcrwblr.png" style="display:block; margin: auto;"/>
+
+<p>Streaming MP3 playback is implemented using the <a href="https://github.com/naudio/NAudio">NAudio</a> library. </p>
+
+<p>skcrwblr requires the .NET Framework 4.5.1. Download <a href="https://github.com/bmn28/skcrwblr/releases/download/v0.5/skcrwblr_v0.5.zip">skcrwblr_v0.5.zip</a>, extract to a folder, and run skcrwblr.exe. The source code is available on <a href="https://github.com/bmn28/skcrwblr">GitHub</a>.</p>
+
+<h2>Manumaker</h2>
+
+<p><a href="https://bmn.kittenpile.com/manumaker/index.html">Manumaker</a> is a web application that generates manuscript paper (music paper) templates. The user can customize the manuscript paper to specified paper and staff dimensions, then download it in PDF format.</p>
+
+<p>Manumaker was written in Python and uses <a href="http://flask.pocoo.org/">Flask</a> and the <a href="http://pyx.sourceforge.net/">PyX</a> graphics library.</p>
+</body>
+</html>
